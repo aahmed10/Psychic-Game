@@ -15,7 +15,7 @@
 	}
 
 	function randletter() {
-	    // This will produce the random letters
+	    // This produces random letters
 	    var randomNum = Math.floor(Math.random() * 25);
 	    comPick = letArray[randomNum];
 	    return comPick;
@@ -40,15 +40,15 @@
 	}
 
 	function compare() {
-	    // Check if letter has already been entered
-	    // If yes, then do nothing
+	    // Checks if letter HAS BEEN entered before
+	    // If yes, then nothing happens
 	    
 		if (guessedLetterArray.indexOf(userPick) != -1) {
 
 			    return;
 			}
 		 
-	    // If not then add to guessedLetterArray then proceed with comparison
+	    // If no it will then add to guessedLetterArray then continue with comparison
 	    guessedLetterArray.push(userPick);
 	    document.querySelector("#letterArray").innerHTML += userPick + ", ";
 	    guessLeft--;
