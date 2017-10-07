@@ -89,6 +89,6 @@
 			return ;
 		}
 
-	    // It takes the user's response and "pushes" (or add the 
+	  
 	    compare();
 	};
